@@ -4,6 +4,286 @@ html
     
 }
 
+
+#our-menu
+{
+    background-color: rgb(139, 192, 139);
+}
+
+.menu-section 
+{
+    background: #ffffff;
+    padding: 90px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.menu-container 
+{
+    max-width: 900px;
+    margin: auto;
+}
+
+
+.menu-title 
+{
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.menu-subtitle 
+{
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.menu-description 
+{
+    font-size: 17px;
+    line-height: 1.8;
+    color: #333;
+}
+
+
+.animate 
+{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.9s ease;
+}
+
+.animate.show 
+{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+@media (max-width: 768px) 
+{
+    .menu-title 
+    {
+
+        font-size: 36px;
+    }
+
+    .menu-description 
+    {
+        font-size: 16px;
+    }
+}
+
+
+.product-section-1 
+{
+  background-color: #e76767;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.product-section-2
+{
+  background-color: #e7b467;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-3
+{
+  background-color: #cadb8d;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-4
+{
+  background-color: #ae96b9;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-5
+{
+  background-color: #88aaaf;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-6
+{
+  background-color: #e5bb93;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-7
+{
+  background-color: #c9c898;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-8
+{
+  background-color: #b5e69f;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-9
+{
+  background-color: #c27474;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-section-10
+{
+  background-color: #98c9be;
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+} */
+
+.product-overlay 
+{
+  padding: 60px 20px;
+}
+
+
+.product-container 
+{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+
+.product-image 
+{
+  flex: 1;
+  animation: zoomFade 1.2s ease forwards;
+}
+
+.product-image img 
+{
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
+}
+
+.product-content 
+{
+  flex: 1;
+  color: #000000;
+  animation: slideFade 1.2s ease forwards;
+  border: 8px double rgb(251, 255, 0);
+  padding: 40px;
+  box-shadow: 0 0 15px #4d4d4d;
+}
+
+.mobile-img
+{
+    display: none;
+}
+
+.product-content h2 
+{
+    font-family: 'Times New Roman', Times, serif;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.product-content .desc 
+{
+    font-weight: bold;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.product-content .highlight {
+
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomFade {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.animate-title
+{
+    opacity:0;
+    transform:translateY(30px);
+    transition:all 0.8s ease;
+}
+
+.animate-title.show
+{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.animate-text
+{
+    opacity:0;
+    transform:translateY(15px);
+    transition:all 1s ease;
+}
+
+.animate-text.show
+{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.animate-title:hover 
+{
+    letter-spacing: 1px;
+    transition: letter-spacing 0.1s ease;
+}
+
+
+
 /* ---------------------Navbar--------------------- */
 .navbar
 {
@@ -152,3 +432,26 @@ html
 
 }
 
+@media (max-width: 768px) 
+{
+  .product-container 
+  {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-buttons 
+  {
+    justify-content: center;
+  }
+
+  .mobile-img
+  {
+    display: block;
+  }
+
+  .desktop-img
+  {
+    display: none;
+  }
+}
