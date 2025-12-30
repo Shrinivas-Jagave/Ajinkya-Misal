@@ -149,8 +149,6 @@ html
     }
 }
 
-
-
 /*----------------------At Ajinkya misal-----------------*/
 .at-image
 {
@@ -168,8 +166,8 @@ html
     box-shadow: 0 0 15px #080808;
     text-align: center;
     border-radius: 45%;
-    background-color: #555;
-    color: #ddd9cd;
+    background-color: #1b1818;
+    color: #ffffff;
 }
 
 .div-img 
@@ -233,6 +231,12 @@ html
   transform: scale(1.04);
   box-shadow: 0 0 15px #4d4d4d;
 }
+
+.card
+{
+    background-color: rgb(252, 252, 180) !important;
+}
+
 
 .card-body-discription
 {
