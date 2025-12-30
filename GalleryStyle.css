@@ -4,6 +4,17 @@ html
     
 }
 
+.heading-box
+{
+  height: 50px;
+  background-color: #ffee00;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+
 /*--------------------Gallery-----------------------------------*/
 .divborder
 {
@@ -260,4 +271,5 @@ html
     }
 
 }
+
 
