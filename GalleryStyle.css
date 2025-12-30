@@ -7,13 +7,14 @@ html
 .heading-box
 {
   height: 50px;
-  background-color: #ffee00;
-  text-align: center;
+  background-color: #f58b34;
   font-size: 30px;
   font-weight: bold;
   color: #c0392b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 /*--------------------Gallery-----------------------------------*/
 .divborder
@@ -271,5 +272,4 @@ html
     }
 
 }
-
 
