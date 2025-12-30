@@ -1,0 +1,337 @@
+html
+{
+    scroll-behavior: smooth;
+    
+}
+
+/* ---------------------Navbar--------------------- */
+.navbar
+{
+    background-color: #fffDD0;
+    color: black;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px none black;
+}
+
+.navbarTags:hover 
+{
+    transform: translateY(-4px);
+}
+
+/* ---------------------Menu Slider--------------------- */
+.offcanvas.custom-offcanvas
+{
+    width: 300px !important;
+    background-color: rgb(207, 207, 207);
+}
+
+/*---------------------Main Section----------------------------*/
+
+.FeedbackPortion 
+{
+    background-color: rgb(207, 207, 207);
+    box-shadow: 0 0 18px rgb(0, 9, 12);
+}
+
+.FormPortion 
+{
+    margin-top: 15px;
+    margin-left: 100px;
+    background-color: #fff;
+    width: 80%;
+    box-shadow: 0 0 18px rgb(0, 9, 12);
+    
+}
+
+.CustomerFeedbackTitle 
+{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Georgia", serif;
+    animation: glowText 2.5s infinite alternate;
+}
+
+.CustomerFeedbackText
+ {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    animation: MovingText 2s infinite;
+    text-shadow: 0 0 5px #aaa;
+}
+
+.CustomerFeedbackNote 
+{
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: "Georgia", serif;
+    text-shadow: 0 0 5px #aaa;
+    
+}
+
+
+#Feedback 
+{
+    border: 2px solid rgba(0, 180, 0, 0.5); 
+}
+
+#NameInput
+{
+    border: 2px solid rgba(0, 180, 0, 0.5); 
+}
+
+#Contact
+{
+    border: 2px solid rgba(0, 180, 0, 0.5); 
+}
+
+#EmailInput
+{
+    border: 2px solid rgba(0, 180, 0, 0.5); 
+}
+
+
+.crazy-card 
+{
+    animation: slideFade 1.2s ease-out forwards;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    border-radius: 16px;
+}
+
+.FormPortion:hover 
+{
+    box-shadow: 0 25px 40px rgba(255, 33, 33, 0.3);
+    border: 1px dotted black;
+}
+
+
+@keyframes slideFade 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateX(-80px) scale(0.95);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes glowText 
+{
+    from 
+    {
+        text-shadow: 0 0 5px #aaa;
+    }
+    to 
+    {
+        text-shadow: 0 0 20px #ff9100, 0 0 40px #22ff47;
+    }
+}
+
+@keyframes MovingText
+{
+    0%, 100% 
+    {
+        transform: translateY(0);
+    }
+    50% 
+    {
+        transform: translateY(-8px);
+    }
+}
+
+/*----------------------Contact Us section----------------------*/
+.ContactDiv
+{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+    box-shadow: 0 0 15px #f58c02;
+}
+
+iframe
+{
+    margin-right: 50px !important;
+    width: 400px;
+    height: 300px;
+}
+
+.contact-card
+{
+    color: #fffDD0;
+}
+
+.Properties
+{
+    text-decoration: none;
+    color: #fffDD0;
+}
+
+#Heading
+{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: "Georgia", serif;
+}
+
+/* ---------------------Fixes Whatsapp img --------------------- */
+.whatsapp-img
+{
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 35px;
+    height: 35px;
+    border: 0px solid black;
+    border-radius: 50%;
+}
+
+.whatsapp-img:hover
+{
+    transform: scale(1.04);
+    box-shadow: 0 0 15px #4d4d4d;
+}
+
+/* ---------------------Go Top Button--------------------- */
+.go-top
+{
+    font-size: 15px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff6767;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+    color: #ece6e6;
+
+}
+.go-top.active
+{
+    bottom: 20px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.go-top:hover
+{
+    transform: scale(1.04);
+    box-shadow: 0 0 15px #4d4d4d;
+}
+
+/* ---------------------Footer--------------------- */
+.footer 
+{
+    background-color:#3a3a3a;
+    color: rgb(255, 255, 255);
+    padding: 20px 20px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-top 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo 
+{
+    width: 200px;
+}
+
+.social-icons 
+{
+    display: flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+.social-icons i 
+{
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons i:hover 
+{
+    color: #ff4d4d;
+    transform: scale(1.2);
+}
+
+
+.footer-line 
+{
+    margin: 25px auto 15px;
+    width: 90%;
+    border: none;
+    border-top: 1px solid #555;
+}
+
+.footer-Text 
+{
+    font-size: 20px;
+    color: rgb(255, 231, 231);
+}
+
+
+
+
+/* ---------------------Media Query--------------------- */
+@media (max-width: 780px) 
+{
+    .CustomerFeedbackText br 
+    {
+        display: none;
+    }
+
+    .FormPortion 
+    {
+        margin-left: 0px;
+        background-color: #fff;
+        width: 98%;
+        box-shadow: 0 0 18px rgb(0, 9, 12);
+    }
+
+    .navbar
+    {
+        background-color: #ece6e6;
+    }
+
+    .ContactDiv 
+    {
+        flex-direction: column;    
+        text-align: start;
+        padding: 15px;
+    }
+
+    .contact-card 
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .map-responsive iframe 
+    {
+        width: 100%;                
+        height: 250px;
+        margin-right: 0 !important;
+    }
+
+
+}
+
