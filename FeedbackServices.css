@@ -307,11 +307,6 @@ iframe
         box-shadow: 0 0 18px rgb(0, 9, 12);
     }
 
-    .navbar
-    {
-        background-color: #ece6e6;
-    }
-
     .ContactDiv 
     {
         flex-direction: column;    
@@ -334,4 +329,5 @@ iframe
 
 
 }
+
 
