@@ -234,7 +234,7 @@ html
 
 .card
 {
-    background-color: rgb(252, 252, 180) !important;
+    background-color: rgb(247, 247, 247) !important;
 }
 
 
@@ -634,3 +634,4 @@ div
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
